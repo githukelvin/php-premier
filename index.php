@@ -5,6 +5,45 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Basics</title>
 </head>
+<style>
+	ul{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 2rem;
+	}
+	li{
+		list-style: none;
+		padding: 1rem ;
+		width: fit-content;
+		border-radius: 20px;
+		color: white;
+		font-family: 'Roboto',sans-serif;
+			font-size: 1rem;
+		font-weight: 500;
+		background: #45edac;
+	}
+	a{
+		text-decoration: none;
+		color: #23adc3;
+	}
+	li:hover {
+		background: #563eda;
+		
+	}
+	li:hover >a{
+		color: #fff;
+	}
+
+	.gt{
+		padding: 1rem;
+		background:#45edac ;
+		border-radius: 20px;
+
+	}
+	.gt:hover{
+		color: #fff;
+	}
+	</style>
 <body>
 	<h2>Click Any link to go to the respectful sections You Want</h2>
 	<ul>
@@ -50,6 +89,8 @@
 
 	 echo "<h1>My name is: $name I am $age My Year of Birth is $YOB</h1>";
 
+ 
 	 ?>
+	 <a class="gt" target="blank" href="https://heroku.com">Heroku web app</a>
 </body>
 </html>
